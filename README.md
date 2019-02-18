@@ -7,3 +7,5 @@ if you use crosshair symbol
 x,y is offset (otherwise absolute position values).
 crosshair symbol are like:
 |_ or _| ... see example file.
+
+https://github.com/sl5net/toolTipGui
