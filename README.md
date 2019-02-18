@@ -32,6 +32,12 @@ crosshair symbol are one or two letters long and looks like:
 
 ¯ - | _ 
 
+sets the position of the text.
+
+if u type first v) then it means vertical.
+example: 
+v)-
+
 ... see sample file.
 
 https://github.com/sl5net/toolTipGui
