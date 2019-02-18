@@ -1,13 +1,16 @@
 # toolTipGui
 
 toolTipGui(text [ , x , y, crosshair symbol , hiddenTitle , bgColor , fontSize ])
+square brackets means optional
 
 or
 
 toolTipGui(text, crosshair, [ hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0 ])
+square brackets means optional
 example: toolTipGui("hi world ", crosshair := "|-")
 
 toolTipGui(text, y, crosshair, [ hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0 ])
+square brackets means optional
 example: toolTipGui("hi all ", 200, crosshair := "|-")
 
 it creates or updates (if hiddenTitle dont change) this cind of tooltop.
