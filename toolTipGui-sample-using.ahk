@@ -4,13 +4,13 @@
 ; example: toolTipGui("hi world ", crosshair := "|-")
 
 ; toolTipGui(text, y, crosshair := "", hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0)
-; example: toolTipGui("hi all ", 200, crosshair := "|-")
+; example: toolTipGui("hi all ", 200 , crosshair := "|-")
 	
 	
-	toolTipGui("hi world test ", "|-","myTitle" A_LineNumber)
-	toolTipGui( "Ho ",99)
+	toolTipGui("hi world test ", "|-", "myTitle" A_LineNumber)
+	toolTipGui( "Ho ", 99)
 	
-	toolTipGui("hi all ", 100, crosshair := "v)-|","myTitle" A_LineNumber)
+	toolTipGui("hi all ", 100 , crosshair := "v)-|","myTitle" A_LineNumber)
 	
 ; toolTipGui2 := toolTipGui( " middle +55 . . . .",x:=55,0,"-",A_LineNumber,"Black")  ; x,y will be offset if crosshair is symbol
 	loop,1

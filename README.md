@@ -9,14 +9,16 @@ toolTipGui(text, crosshair, [ hiddenTitle := "", bgColor := "", fontSize := 0, M
 square brackets means optional
 example: toolTipGui("hi world ", crosshair := "|-")
 
+or
+
 toolTipGui(text, y, crosshair, [ hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0 ])
 square brackets means optional
 example: toolTipGui("hi all ", 200, crosshair := "|-")
 
-it creates or updates (if hiddenTitle dont change) this cind of tooltop.
-if you use crosshair symbol
+it creates or updates (if hiddenTitle exist).
+if you use crosshair symbol (see below)
 x,y is offset (otherwise absolute position values).
-crosshair symbol are one or two letters lonk and looks like:
+crosshair symbol are one or two letters long and looks like:
 
 /¯ ¯\
 
