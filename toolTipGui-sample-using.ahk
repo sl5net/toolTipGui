@@ -13,7 +13,7 @@
 	toolTipGui("hi all ", 100, crosshair := "v)-|","myTitle" A_LineNumber)
 	
 ; toolTipGui2 := toolTipGui( " middle +55 . . . .",x:=55,0,"-",A_LineNumber,"Black")  ; x,y will be offset if crosshair is symbol
-	loop,0
+	loop,1
 	{
 	toolTipGui2 := toolTipGui(A_Index ": vertical. top  . . . .",x:=155,48,"v)¯",A_LineNumber,"Red") 
 	
