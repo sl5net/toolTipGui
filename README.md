@@ -4,10 +4,10 @@ toolTipGui(text [ , x , y, crosshair symbol , hiddenTitle , bgColor , fontSize ]
 
 or
 
-toolTipGui(text, crosshair := "", [ hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0 ])
+toolTipGui(text, crosshair, [ hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0 ])
 example: toolTipGui("hi world ", crosshair := "|-")
 
-toolTipGui(text, y, crosshair := "", [ hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0 ])
+toolTipGui(text, y, crosshair, [ hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0 ])
 example: toolTipGui("hi all ", 200, crosshair := "|-")
 
 it creates or updates (if hiddenTitle dont change) this cind of tooltop.
