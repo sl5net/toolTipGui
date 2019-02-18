@@ -1,9 +1,20 @@
-﻿toolTipGui( "Ho ",99)
-toolTipGui("hi world test ", "v)|-")
+﻿; toolTipGui(text, x := 1, y := 1, crosshair := "", hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0){
+	
+; toolTipGui(text, crosshair := "", hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0)
+; example: toolTipGui("hi world ", crosshair := "|-")
 
+; toolTipGui(text, y, crosshair := "", hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0)
+; example: toolTipGui("hi all ", 200, crosshair := "|-")
+	
+	
+	toolTipGui("hi world test ", "|-","myTitle" A_LineNumber)
+	toolTipGui( "Ho ",99)
+	
+	toolTipGui("hi all ", 100, crosshair := "v)-|","myTitle" A_LineNumber)
+	
 ; toolTipGui2 := toolTipGui( " middle +55 . . . .",x:=55,0,"-",A_LineNumber,"Black")  ; x,y will be offset if crosshair is symbol
-loop,0
-{
+	loop,0
+	{
 	toolTipGui2 := toolTipGui(A_Index ": vertical. top  . . . .",x:=155,48,"v)¯",A_LineNumber,"Red") 
 	
 	toolTipGui2 := toolTipGui(A_Index ": middle left quarter +55 . . . .",x:=55,y=0,"/-",A_LineNumber,"Black")  ; x,y will be offset if crosshair is symbol
