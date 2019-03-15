@@ -7,7 +7,8 @@
 , fontSize := 0 	; 7
 , MonitorNr :=0){ 	; 8
 	; also possible usage: 
-
+ 
+ 
 	; toolTipGui(text, crosshair := "", hiddenTitle := "", bgColor := "", fontSize := 0, MonitorNr :=0)
 	; example: toolTipGui("hi world ", crosshair := "|-")
 
