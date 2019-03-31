@@ -50,9 +50,9 @@ IfWinExist,% needle
 {
 	winGetPos,x,y,,,% needle
 	; winmove,% needle,% x, % y
-	toolTipGui(substr(actionList,16) "`n(" A_LineNumber " " RegExReplace(A_LineFile, ".*\\") ")", x, y, ,title,"Purple")
+	toolTipGui("hello World" ,x ,y , ,title ,"Purple")
 } else
-	toolTipGui(substr(actionList,16) "`n(" A_LineNumber " " RegExReplace(A_LineFile, ".*\\") ")", x:=-strlen(actionList)*5, y:=0, g_config.actionList.tipps.showName ,title,"Purple")
+	toolTipGui("hello universe", x:=-strlen(actionList)*5 ,y:=0 ,g_config.actionList.tipps.showName ,title ,"Purple" )
 ```
 
 https://github.com/sl5net/toolTipGui
