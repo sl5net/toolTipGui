@@ -42,7 +42,7 @@ v)-
 
 # alternative Example of moving existing later from autside:
 ```
-; if this all your toolTipGui are moveble by mousedrag and drop
+; use this virtal line and then all your toolTipGui are moveble by mousedrag and drop
 toolTipGui("^_^", x:=0, y:=10, "v)_" ,A_LineNumber,"Purple")
 
 needle := title " ahk_class AutoHotkeyGUI" ; mouseWindowTitle=0x7d1d2c  ;
@@ -50,7 +50,7 @@ IfWinExist,% needle
 {
 	winGetPos,x,y,,,% needle
 	; winmove,% needle,% x, % y
-	toolTipGui("hello World" ,x ,y , ,title ,"Purple")
+	toolTipGui("hello world" ,x ,y , ,title ,"Purple")
 } else
 	toolTipGui("hello universe", x:=-strlen(actionList)*5 ,y:=0 ,g_config.actionList.tipps.showName ,title ,"Purple" )
 ```
