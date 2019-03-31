@@ -40,4 +40,19 @@ v)-
 
 ... see sample file.
 
+# alternative Example of moving existing later from autside:
+```
+; if this all your toolTipGui are moveble by mousedrag and drop
+toolTipGui("^_^", x:=0, y:=10, "v)_" ,A_LineNumber,"Purple")
+
+needle := title " ahk_class AutoHotkeyGUI" ; mouseWindowTitle=0x7d1d2c  ;
+IfWinExist,% needle
+{
+	winGetPos,x,y,,,% needle
+	; winmove,% needle,% x, % y
+	toolTipGui(substr(actionList,16) "`n(" A_LineNumber " " RegExReplace(A_LineFile, ".*\\") ")", x, y, ,title,"Purple")
+} else
+	toolTipGui(substr(actionList,16) "`n(" A_LineNumber " " RegExReplace(A_LineFile, ".*\\") ")", x:=-strlen(actionList)*5, y:=0, g_config.actionList.tipps.showName ,title,"Purple")
+```
+
 https://github.com/sl5net/toolTipGui
