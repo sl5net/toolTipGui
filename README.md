@@ -42,7 +42,7 @@ v)-
 
 # alternative Example of moving existing later from autside:
 ```
-; use this virtal line and then all your toolTipGui are moveble by mousedrag and drop
+; use a virtal line and then all your toolTipGui are moveble by mousedrag and drop
 toolTipGui("^_^", x:=0, y:=10, "v)_" ,A_LineNumber,"Purple")
 
 needle := title " ahk_class AutoHotkeyGUI" ; mouseWindowTitle=0x7d1d2c  ;
